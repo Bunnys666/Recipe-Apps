@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
 
 import { api } from "~/utils/api";
 
@@ -46,6 +47,7 @@ export default function Home() {
             {hello.data ? hello.data.greeting : "Loading tRPC query..."}
           </p>
         </div>
+        <UserButton afterSignOutUrl="/" />
       </main>
     </>
   );
