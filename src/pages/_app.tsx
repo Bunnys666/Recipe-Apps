@@ -3,7 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { api } from "~/utils/api";
 import { MantineProvider, createTheme } from "@mantine/core";
 
-// import "~/styles/globals.css";
+import "~/styles/globals.css";
 import "@mantine/core/styles.css";
 
 const theme = createTheme({

@@ -1,5 +1,7 @@
 const config = {
   plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
     'postcss-preset-mantine': {},
     'postcss-simple-vars': {
       variables: {
@@ -10,8 +12,6 @@ const config = {
         'mantine-breakpoint-xl': '88em',
       },
     },
-    tailwindcss: {},
-    autoprefixer: {},
   },
 };
 

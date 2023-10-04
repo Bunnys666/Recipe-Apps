@@ -4,7 +4,7 @@ import { UserButton } from "@clerk/nextjs";
 
 import { api } from "~/utils/api";
 import { HeroBullets } from "~/components/HeroBullets";
-
+import { NavbarSearch } from "~/components/NavbarSearch";
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 

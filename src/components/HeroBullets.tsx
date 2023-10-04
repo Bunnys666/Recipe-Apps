@@ -10,9 +10,9 @@ import {
   rem,
 } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
-// import image from "./image.svg";
 import image from "../../public/3.svg";
 import classes from "../styles/HeroBullets.module.css";
+import Link from "next/link";
 
 export function HeroBullets() {
   return (
@@ -25,8 +25,8 @@ export function HeroBullets() {
           </Title>
           <Text c="dimmed" mt="md">
             Build fully functional accessible web applications faster than ever
-            – Mantine includes more than 120 customizable components and hooks
-            to cover you in any situation
+            Mantine includes more than 120 customizable components and hooks to
+            cover you in any situation
           </Text>
 
           <List
@@ -58,7 +58,7 @@ export function HeroBullets() {
 
           <Group mt={30}>
             <Button radius="xl" size="md" className={classes.control}>
-              Get started
+              <Link href={"/signin"}>Get started</Link>
             </Button>
             <Button
               variant="default"
