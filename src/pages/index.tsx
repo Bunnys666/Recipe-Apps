@@ -3,6 +3,7 @@ import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 
 import { api } from "~/utils/api";
+import { HeroBullets } from "~/components/HeroBullets";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -49,6 +50,7 @@ export default function Home() {
         </div>
         <UserButton afterSignOutUrl="/" />
       </main>
+      <HeroBullets />
     </>
   );
 }
