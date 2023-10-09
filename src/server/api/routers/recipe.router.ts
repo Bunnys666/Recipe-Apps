@@ -1,5 +1,9 @@
 import { z } from "zod";
-import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "~/server/api/trpc";
 
 export const recipeRouter = createTRPCRouter({
   created: protectedProcedure
@@ -19,4 +23,30 @@ export const recipeRouter = createTRPCRouter({
         },
       });
     }),
+
+  deleted: protectedProcedure
+    .input(z.object({ id: z.number() }))
+    .mutation(async ({ ctx, input }) => {
+      const res = await ctx.db.recipes.findMany({
+        where: {
+          id: input.id,
+          userId: ctx.auth.userId,
+        },
+      });
+      return res;
+    }),
+
+  // get all the recipes
+  getAll: publicProcedure.query(({ ctx }) => {
+    return ctx.db.recipes.findMany({});
+  }),
+
+  // get all the recipes for a specific user
+  getUser: protectedProcedure.query(({ ctx }) => {
+    return ctx.db.recipes.findMany({
+      where: {
+        userId: ctx.auth.userId,
+      },
+    });
+  }),
 });
