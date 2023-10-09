@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.25.1",
+    "@mantine/code-highlight": "^7.1.2",
     "@mantine/core": "^7.1.2",
+    "@mantine/ds": "^7.1.2",
+    "@mantine/form": "^7.1.2",
     "@mantine/hooks": "^7.1.2",
     "@prisma/client": "^5.1.1",
     "@t3-oss/env-nextjs": "^0.6.1",
@@ -22,6 +25,7 @@
     "@trpc/next": "^10.37.1",
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
+    "lucide-react": "^0.284.0",
     "next": "^13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",

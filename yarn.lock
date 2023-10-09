@@ -203,6 +203,14 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@mantine/code-highlight@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@mantine/code-highlight/-/code-highlight-7.1.2.tgz#05e556eb762bec6c6790314141d01831b0a0751a"
+  integrity sha512-pP0cOdyEoM0aIRmm7T+KAdq6V2N4gQEzcvRx0gd6UhGbPS4f8iLwraIST0jnyS7tAfereP25VqNeedWepHsK/A==
+  dependencies:
+    clsx "2.0.0"
+    highlight.js "^11.7.0"
+
 "@mantine/core@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.1.2.tgz#6961926af2940955df6ca6ddb19c20eabd11e31f"
@@ -214,6 +222,21 @@
     react-remove-scroll "^2.5.6"
     react-textarea-autosize "8.5.3"
     type-fest "^3.13.1"
+
+"@mantine/ds@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@mantine/ds/-/ds-7.1.2.tgz#a3569c5d28686cec271d3359983f6c3a7fafee21"
+  integrity sha512-pj/4SZq9urGlY2428Fu7F+Zv9FdXpM0Y9gXCtK4L59C1EIv3YRahIPI+cnuiUROSta+9YmxlniBuVqfTP00m2Q==
+  dependencies:
+    clsx "2.0.0"
+
+"@mantine/form@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.1.2.tgz#569d4778ffda7a0f71ffe9d9a93b81f9002038fb"
+  integrity sha512-FnUu5XNmRM265G0wy19qSRiItG/2eQ0GQCctnokw6ws9ZnCU1NqvsmpuDE/UiV4YCAOhAVHfqnjG/8tsrlw7ug==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    klona "^2.0.5"
 
 "@mantine/hooks@^7.1.2":
   version "7.1.2"
@@ -1771,6 +1794,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+highlight.js@^11.7.0:
+  version "11.8.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.8.0.tgz#966518ea83257bae2e7c9a48596231856555bb65"
+  integrity sha512-MedQhoqVdr0U6SSnWPzfiadUcDHfN/Wzq25AkXiQv9oiOO/sG0S7XkvpFIqWBl9Yq1UYyYOOVORs5UW2XlPyzg==
+
 ignore@^5.2.0, ignore@^5.2.4:
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.4.tgz#a291c0c6178ff1b960befe47fcdec301674a6324"
@@ -2076,6 +2104,11 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
+klona@^2.0.5:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
+  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
+
 language-subtag-registry@~0.3.2:
   version "0.3.22"
   resolved "https://registry.yarnpkg.com/language-subtag-registry/-/language-subtag-registry-0.3.22.tgz#2e1500861b2e457eba7e7ae86877cbd08fa1fd1d"
@@ -2138,6 +2171,11 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+lucide-react@^0.284.0:
+  version "0.284.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.284.0.tgz#91df00fb62f9de498a4fcc3fbad2d58813bdd23b"
+  integrity sha512-dVSMHYAya/TeY3+vsk+VQJEKNQN2AhIo0+Dp09B2qpzvcBuu93H98YZykFcjIAfmanFiDd8nqfXFR38L757cyQ==
 
 map-obj@^4.0.0, map-obj@^4.1.0:
   version "4.3.0"

@@ -21,7 +21,9 @@ model Example {
 
 model Recipes {
     id          Int      @id @default(autoincrement())
+    userId      String
     name        String
+    type        String
     createdAt   DateTime @default(now())
     updatedAt   DateTime @default(now())
     ingredient  String   @db.VarChar(255)
